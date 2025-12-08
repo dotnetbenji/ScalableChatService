@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\dotnetbenji\\UserAuthentication\\AuthenticationService\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1BEDCD03-F863-5BF8-7F0C-CBE5284A596D}|AuthenticationService\\AuthenticationService.csproj|c:\\dotnetbenji\\userauthentication\\authenticationservice\\authenticationservice\\sessionvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BEDCD03-F863-5BF8-7F0C-CBE5284A596D}|AuthenticationService\\AuthenticationService.csproj|solutionrelative:authenticationservice\\sessionvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BEDCD03-F863-5BF8-7F0C-CBE5284A596D}|AuthenticationService\\AuthenticationService.csproj|c:\\dotnetbenji\\userauthentication\\authenticationservice\\authenticationservice\\dbsessionresolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BEDCD03-F863-5BF8-7F0C-CBE5284A596D}|AuthenticationService\\AuthenticationService.csproj|solutionrelative:authenticationservice\\dbsessionresolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BEDCD03-F863-5BF8-7F0C-CBE5284A596D}|AuthenticationService\\AuthenticationService.csproj|c:\\dotnetbenji\\userauthentication\\authenticationservice\\authenticationservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BEDCD03-F863-5BF8-7F0C-CBE5284A596D}|AuthenticationService\\AuthenticationService.csproj|solutionrelative:authenticationservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BEDCD03-F863-5BF8-7F0C-CBE5284A596D}|AuthenticationService\\AuthenticationService.csproj|c:\\dotnetbenji\\userauthentication\\authenticationservice\\authenticationservice\\authenticationservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1BEDCD03-F863-5BF8-7F0C-CBE5284A596D}|AuthenticationService\\AuthenticationService.csproj|solutionrelative:authenticationservice\\authenticationservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BEDCD03-F863-5BF8-7F0C-CBE5284A596D}|AuthenticationService\\AuthenticationService.csproj|c:\\dotnetbenji\\userauthentication\\authenticationservice\\authenticationservice\\data\\implementations\\newsaltprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BEDCD03-F863-5BF8-7F0C-CBE5284A596D}|AuthenticationService\\AuthenticationService.csproj|solutionrelative:authenticationservice\\data\\implementations\\newsaltprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BEDCD03-F863-5BF8-7F0C-CBE5284A596D}|AuthenticationService\\AuthenticationService.csproj|c:\\dotnetbenji\\userauthentication\\authenticationservice\\authenticationservice\\data\\implementations\\newsessiontoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BEDCD03-F863-5BF8-7F0C-CBE5284A596D}|AuthenticationService\\AuthenticationService.csproj|solutionrelative:authenticationservice\\data\\implementations\\newsessiontoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BEDCD03-F863-5BF8-7F0C-CBE5284A596D}|AuthenticationService\\AuthenticationService.csproj|c:\\dotnetbenji\\userauthentication\\authenticationservice\\authenticationservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1BEDCD03-F863-5BF8-7F0C-CBE5284A596D}|AuthenticationService\\AuthenticationService.csproj|solutionrelative:authenticationservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 206,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DBSessionResolver.cs",
+              "DocumentMoniker": "C:\\dotnetbenji\\UserAuthentication\\AuthenticationService\\AuthenticationService\\DBSessionResolver.cs",
+              "RelativeDocumentMoniker": "AuthenticationService\\DBSessionResolver.cs",
+              "ToolTip": "C:\\dotnetbenji\\UserAuthentication\\AuthenticationService\\AuthenticationService\\DBSessionResolver.cs",
+              "RelativeToolTip": "AuthenticationService\\DBSessionResolver.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAA0wDQAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T17:27:20.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SessionValidator.cs",
+              "DocumentMoniker": "C:\\dotnetbenji\\UserAuthentication\\AuthenticationService\\AuthenticationService\\SessionValidator.cs",
+              "RelativeDocumentMoniker": "AuthenticationService\\SessionValidator.cs",
+              "ToolTip": "C:\\dotnetbenji\\UserAuthentication\\AuthenticationService\\AuthenticationService\\SessionValidator.cs",
+              "RelativeToolTip": "AuthenticationService\\SessionValidator.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAIwCkAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T12:01:27.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NewSessionToken.cs",
+              "DocumentMoniker": "C:\\dotnetbenji\\UserAuthentication\\AuthenticationService\\AuthenticationService\\Data\\Implementations\\NewSessionToken.cs",
+              "RelativeDocumentMoniker": "AuthenticationService\\Data\\Implementations\\NewSessionToken.cs",
+              "ToolTip": "C:\\dotnetbenji\\UserAuthentication\\AuthenticationService\\AuthenticationService\\Data\\Implementations\\NewSessionToken.cs",
+              "RelativeToolTip": "AuthenticationService\\Data\\Implementations\\NewSessionToken.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T19:32:55.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NewSaltProvider.cs",
+              "DocumentMoniker": "C:\\dotnetbenji\\UserAuthentication\\AuthenticationService\\AuthenticationService\\Data\\Implementations\\NewSaltProvider.cs",
+              "RelativeDocumentMoniker": "AuthenticationService\\Data\\Implementations\\NewSaltProvider.cs",
+              "ToolTip": "C:\\dotnetbenji\\UserAuthentication\\AuthenticationService\\AuthenticationService\\Data\\Implementations\\NewSaltProvider.cs",
+              "RelativeToolTip": "AuthenticationService\\Data\\Implementations\\NewSaltProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T19:31:03.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthenticationService.csproj",
+              "DocumentMoniker": "C:\\dotnetbenji\\UserAuthentication\\AuthenticationService\\AuthenticationService\\AuthenticationService.csproj",
+              "RelativeDocumentMoniker": "AuthenticationService\\AuthenticationService.csproj",
+              "ToolTip": "C:\\dotnetbenji\\UserAuthentication\\AuthenticationService\\AuthenticationService\\AuthenticationService.csproj",
+              "RelativeToolTip": "AuthenticationService\\AuthenticationService.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-06T16:48:22.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\dotnetbenji\\UserAuthentication\\AuthenticationService\\AuthenticationService\\appsettings.json",
+              "RelativeDocumentMoniker": "AuthenticationService\\appsettings.json",
+              "ToolTip": "C:\\dotnetbenji\\UserAuthentication\\AuthenticationService\\AuthenticationService\\appsettings.json",
+              "RelativeToolTip": "AuthenticationService\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-06T12:59:26.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\dotnetbenji\\UserAuthentication\\AuthenticationService\\AuthenticationService\\Program.cs",
+              "RelativeDocumentMoniker": "AuthenticationService\\Program.cs",
+              "ToolTip": "C:\\dotnetbenji\\UserAuthentication\\AuthenticationService\\AuthenticationService\\Program.cs",
+              "RelativeToolTip": "AuthenticationService\\Program.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAkwHsAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T12:07:43.812Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
