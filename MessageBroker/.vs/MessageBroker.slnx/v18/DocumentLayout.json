@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\dotnetbenji\\ScalableChatService\\MessageBroker\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CFCCB205-401F-49AB-B67C-7F930DE27C30}|MessageBroker\\MessageBroker.csproj|c:\\dotnetbenji\\scalablechatservice\\messagebroker\\messagebroker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFCCB205-401F-49AB-B67C-7F930DE27C30}|MessageBroker\\MessageBroker.csproj|solutionrelative:messagebroker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 206,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\dotnetbenji\\ScalableChatService\\MessageBroker\\MessageBroker\\Program.cs",
+              "RelativeDocumentMoniker": "MessageBroker\\Program.cs",
+              "ToolTip": "C:\\dotnetbenji\\ScalableChatService\\MessageBroker\\MessageBroker\\Program.cs",
+              "RelativeToolTip": "MessageBroker\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T21:59:13.713Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
