@@ -52,3 +52,14 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+.vs/
+bin/
+obj/
+.nuget/
+
+# ignore any temp files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
