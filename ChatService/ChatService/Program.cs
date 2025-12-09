@@ -1,12 +1,13 @@
+using ChatService;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+
+builder.Services.AddSingleton<IMessageChannel, SseMessageChannel>();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
@@ -14,28 +15,26 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-var summaries = new[]
+app.MapGet("/sse-channel", async (IMessageChannel stream, HttpContext ctx) =>
 {
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+    ctx.Response.Headers.Append("Content-Type", "text/event-stream");
 
-app.MapGet("/weatherforecast", () =>
+    await ctx.Response.WriteAsync($"data: Welcome\n\n", ctx.RequestAborted);
+    await ctx.Response.Body.FlushAsync(ctx.RequestAborted);
+
+    await foreach (var msg in stream.Subscribe(ctx.RequestAborted))
+    {
+        await ctx.Response.WriteAsync($"data: {msg}\n\n", ctx.RequestAborted);
+        await ctx.Response.Body.FlushAsync(ctx.RequestAborted);
+    }
+});
+
+app.MapPost("/send", (SendMessageRequest messageRequest, IMessageChannel stream) =>
 {
-    var forecast = Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast");
+    stream.Publish(messageRequest.Message);
+    return Results.Ok();
+});
 
 app.Run();
 
-internal record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
+internal sealed record SendMessageRequest(string Message);
