@@ -4,7 +4,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddOpenApi();
 
-builder.Services.AddSingleton<IMessageChannel, SseMessageChannel>();
+builder.Services.AddScoped<IMessageChannel, SseMessageChannel>();
 
 var app = builder.Build();
 
