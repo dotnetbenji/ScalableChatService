@@ -5,6 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddOpenApi();
 
 builder.Services.AddScoped<IMessageChannel, SseMessageChannel>();
+builder.Services.AddSingleton<IMessageDistributuionService, MessageDistributionService>();
 
 var app = builder.Build();
 
@@ -15,12 +16,14 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapGet("/sse-channel", async (IMessageChannel stream, HttpContext ctx) =>
+app.MapGet("/sse-channel", async (IMessageDistributuionService messageDistributionService, IMessageChannel stream, HttpContext ctx) =>
 {
     ctx.Response.Headers.Append("Content-Type", "text/event-stream");
 
     await ctx.Response.WriteAsync($"data: Welcome\n\n", ctx.RequestAborted);
     await ctx.Response.Body.FlushAsync(ctx.RequestAborted);
+
+    var success = messageDistributionService.Subscribe(stream);
 
     await foreach (var msg in stream.Subscribe(ctx.RequestAborted))
     {
@@ -29,9 +32,9 @@ app.MapGet("/sse-channel", async (IMessageChannel stream, HttpContext ctx) =>
     }
 });
 
-app.MapPost("/send", (SendMessageRequest messageRequest, IMessageChannel stream) =>
+app.MapPost("/send", (SendMessageRequest messageRequest, IMessageDistributuionService messageDistributionService) =>
 {
-    stream.Publish(messageRequest.Message);
+    messageDistributionService.Publish(messageRequest.Message);
     return Results.Ok();
 });
 

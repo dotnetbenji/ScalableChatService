@@ -7,8 +7,8 @@
       "RelativeMoniker": "D:0:0:{AC1CD003-DC72-C90D-BDA0-207A89E186BC}|ChatService\\ChatService.csproj|solutionrelative:chatservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC1CD003-DC72-C90D-BDA0-207A89E186BC}|ChatService\\ChatService.csproj|c:\\dotnetbenji\\scalablechatservice\\chatservice\\chatservice\\ssemessagechannel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC1CD003-DC72-C90D-BDA0-207A89E186BC}|ChatService\\ChatService.csproj|solutionrelative:chatservice\\ssemessagechannel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AC1CD003-DC72-C90D-BDA0-207A89E186BC}|ChatService\\ChatService.csproj|c:\\dotnetbenji\\scalablechatservice\\chatservice\\chatservice\\messagedistributionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC1CD003-DC72-C90D-BDA0-207A89E186BC}|ChatService\\ChatService.csproj|solutionrelative:chatservice\\messagedistributionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,14 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SseMessageChannel.cs",
-              "DocumentMoniker": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\ChatService\\SseMessageChannel.cs",
-              "RelativeDocumentMoniker": "ChatService\\SseMessageChannel.cs",
-              "ToolTip": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\ChatService\\SseMessageChannel.cs",
-              "RelativeToolTip": "ChatService\\SseMessageChannel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAiAAAAAAAAAA==",
+              "Title": "MessageDistributionService.cs",
+              "DocumentMoniker": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\ChatService\\MessageDistributionService.cs",
+              "RelativeDocumentMoniker": "ChatService\\MessageDistributionService.cs",
+              "ToolTip": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\ChatService\\MessageDistributionService.cs",
+              "RelativeToolTip": "ChatService\\MessageDistributionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBoAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T21:13:56.858Z",
+              "WhenOpened": "2025-12-11T21:40:30.183Z",
               "EditorCaption": ""
             },
             {
@@ -41,7 +41,7 @@
               "RelativeDocumentMoniker": "ChatService\\Program.cs",
               "ToolTip": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\ChatService\\Program.cs",
               "RelativeToolTip": "ChatService\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABDAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-08T21:57:46.769Z",
               "EditorCaption": ""
