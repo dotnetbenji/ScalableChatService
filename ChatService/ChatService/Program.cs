@@ -28,16 +28,16 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapGet("/sse", async (IMessageDistributuionService messageDistributionService, IMessageChannel stream, HttpContext ctx) =>
+app.MapGet("/sse", async (IMessageDistributuionService messageDistributionService, IMessageChannel messageChannel, HttpContext ctx) =>
 {
     ctx.Response.Headers.Append("Content-Type", "text/event-stream");
 
     await ctx.Response.WriteAsync($"data: Welcome\n\n", ctx.RequestAborted);
     await ctx.Response.Body.FlushAsync(ctx.RequestAborted);
 
-    var success = messageDistributionService.Subscribe(stream);
+    var success = messageDistributionService.Subscribe(messageChannel);
 
-    await foreach (var msg in stream.Subscribe(ctx.RequestAborted))
+    await foreach (var msg in messageChannel.ReadAllMessages(ctx.RequestAborted))
     {
         await ctx.Response.WriteAsync($"data: {msg}\n\n", ctx.RequestAborted);
         await ctx.Response.Body.FlushAsync(ctx.RequestAborted);

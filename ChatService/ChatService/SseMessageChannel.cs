@@ -5,7 +5,7 @@ namespace ChatService;
 internal interface IMessageChannel
 {
     void Publish(string message);
-    IAsyncEnumerable<string> Subscribe(CancellationToken token);
+    IAsyncEnumerable<string> ReadAllMessages(CancellationToken token);
 }
 
 public class SseMessageChannel : IMessageChannel
@@ -14,6 +14,6 @@ public class SseMessageChannel : IMessageChannel
 
     public void Publish(string message) => channel.Writer.TryWrite(message);
 
-    public IAsyncEnumerable<string> Subscribe(CancellationToken token) =>
+    public IAsyncEnumerable<string> ReadAllMessages(CancellationToken token) =>
         channel.Reader.ReadAllAsync(token);
 }
