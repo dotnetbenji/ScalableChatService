@@ -1,11 +1,23 @@
 using ChatService;
+using StackExchange.Redis;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddOpenApi();
 
+builder.Services.AddSingleton<IConnectionMultiplexer>(sp =>
+{
+    string? redisConnectionString = builder.Configuration.GetSection("Redis:ConnectionString").Value;
+    if (redisConnectionString is null)
+        throw new Exception("Redis connection string not found in config");
+
+    return ConnectionMultiplexer.Connect(redisConnectionString);
+});
+
 builder.Services.AddScoped<IMessageChannel, SseMessageChannel>();
 builder.Services.AddSingleton<IMessageDistributuionService, MessageDistributionService>();
+
+builder.Services.AddHostedService<RedisSubscriberService>();
 
 var app = builder.Build();
 
@@ -16,7 +28,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapGet("/sse-channel", async (IMessageDistributuionService messageDistributionService, IMessageChannel stream, HttpContext ctx) =>
+app.MapGet("/sse", async (IMessageDistributuionService messageDistributionService, IMessageChannel stream, HttpContext ctx) =>
 {
     ctx.Response.Headers.Append("Content-Type", "text/event-stream");
 
@@ -32,9 +44,12 @@ app.MapGet("/sse-channel", async (IMessageDistributuionService messageDistributi
     }
 });
 
-app.MapPost("/send", (SendMessageRequest messageRequest, IMessageDistributuionService messageDistributionService) =>
+app.MapPost("/send", async (SendMessageRequest messageRequest, IConnectionMultiplexer connectionMultiplexer) =>
 {
-    messageDistributionService.Publish(messageRequest.Message);
+    var pubsub = connectionMultiplexer.GetSubscriber();
+
+    _ = pubsub.PublishAsync(RedisSubscriberService.Channel, messageRequest.Message, CommandFlags.FireAndForget);
+
     return Results.Ok();
 });
 

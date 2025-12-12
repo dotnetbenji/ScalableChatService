@@ -1,7 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc.TagHelpers;
-using System.Threading.Channels;
-
-namespace ChatService;
+﻿namespace ChatService;
 
 internal interface IMessageDistributuionService
 {
