@@ -1,4 +1,4 @@
-using AuthenticationService;
+using AuthenticationService.Sessions.Validators;
 using ChatService;
 using StackExchange.Redis;
 
@@ -17,6 +17,7 @@ builder.Services.AddSingleton<IConnectionMultiplexer>(sp =>
 
 builder.Services.AddScoped<IMessageChannel, SseMessageChannel>();
 builder.Services.AddSingleton<IMessageDistributuionService, MessageDistributionService>();
+builder.Services.AddTransient<ISessionValidator, RedisSessionValidator>();
 
 builder.Services.AddHostedService<RedisSubscriberService>();
 
@@ -51,13 +52,13 @@ app.MapPost("/send", async (HttpContext ctx, SendMessageRequest messageRequest, 
     if (tokenString == null)
         return Results.Unauthorized();
 
-    int? userId = await sessionValidator.Validate(new SessionToken(tokenString));
-    if (userId is null)
+    User? user = await sessionValidator.Validate(new SessionToken(tokenString));
+    if (user is null)
         return Results.Unauthorized();
 
     var pubsub = connectionMultiplexer.GetSubscriber();
 
-    _ = pubsub.PublishAsync(RedisSubscriberService.Channel, messageRequest.Message, CommandFlags.FireAndForget);
+    _ = pubsub.PublishAsync(RedisSubscriberService.Channel, $"{user.Username}: {messageRequest.Message}", CommandFlags.FireAndForget);
 
     return Results.Ok();
 });

@@ -1,4 +1,4 @@
 <Solution>
-  <Project Path="AuthenticationService/AuthenticationService.csproj" />
+  <Project Path="AuthenticationService/AuthenticationService/AuthenticationService.csproj" />
   <Project Path="ChatService/ChatService.csproj" />
 </Solution>

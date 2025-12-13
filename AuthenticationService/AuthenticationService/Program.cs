@@ -1,6 +1,8 @@
 ﻿using AuthenticationService;
 using AuthenticationService.Data.Implementations;
 using AuthenticationService.Data.Interfaces;
+using AuthenticationService.Sessions.Resolvers;
+using AuthenticationService.Sessions.Validators;
 using Dapper;
 using Microsoft.Data.SqlClient;
 using StackExchange.Redis;
@@ -95,7 +97,7 @@ app.MapPost("/login", async (
     if (user == null)
         return Results.Unauthorized();
 
-    string encodedSessionToken = await sessionResolver.CreateSession(user.UserId);
+    string encodedSessionToken = await sessionResolver.CreateSession(user);
 
     return Results.Ok(new
     {
@@ -113,11 +115,11 @@ app.MapGet("/info", async (
     if (tokenString == null)
         return Results.Unauthorized();
 
-    int? userId = await sessionValidator.Validate(new SessionToken(tokenString));
-    if (userId is null)
+    User? user = await sessionValidator.Validate(new SessionToken(tokenString));
+    if (user is null)
         return Results.Unauthorized();
 
-    var sessions = await sessionResolver.GetUserSessions((int)userId);
+    var sessions = await sessionResolver.GetUserSessions(user.UserId);
 
     return Results.Ok(new { 
         Sessions = sessions
@@ -151,7 +153,7 @@ internal static class SqlExceptionExtensions
         => exception.Number == 2627 || exception.Number == 2601;
 }
 
-internal sealed record User(int UserId, string Username);
+public sealed record User(int UserId, string Username);
 
 internal sealed record LoginRequest(string Username, string Password);
 internal sealed record CreateUserRequest(string Username, string Password);
