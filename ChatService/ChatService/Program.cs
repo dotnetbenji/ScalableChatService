@@ -1,3 +1,4 @@
+using AuthenticationService;
 using ChatService;
 using StackExchange.Redis;
 
@@ -44,8 +45,16 @@ app.MapGet("/sse", async (IMessageDistributuionService messageDistributionServic
     }
 });
 
-app.MapPost("/send", async (SendMessageRequest messageRequest, IConnectionMultiplexer connectionMultiplexer) =>
+app.MapPost("/send", async (HttpContext ctx, SendMessageRequest messageRequest, IConnectionMultiplexer connectionMultiplexer, ISessionValidator sessionValidator) =>
 {
+    var tokenString = GetSessionTokenFromRequest(ctx);
+    if (tokenString == null)
+        return Results.Unauthorized();
+
+    int? userId = await sessionValidator.Validate(new SessionToken(tokenString));
+    if (userId is null)
+        return Results.Unauthorized();
+
     var pubsub = connectionMultiplexer.GetSubscriber();
 
     _ = pubsub.PublishAsync(RedisSubscriberService.Channel, messageRequest.Message, CommandFlags.FireAndForget);
@@ -54,5 +63,25 @@ app.MapPost("/send", async (SendMessageRequest messageRequest, IConnectionMultip
 });
 
 app.Run();
+
+
+static string? GetSessionTokenFromRequest(HttpContext ctx)
+{
+    var header = ctx.Request.Headers.Authorization.ToString();
+
+    if (!header.StartsWith("Bearer ", StringComparison.OrdinalIgnoreCase))
+        return null;
+
+    string encoded = header["Bearer ".Length..].Trim();
+
+    try
+    {
+        return encoded;
+    }
+    catch
+    {
+        return null;
+    }
+}
 
 internal sealed record SendMessageRequest(string Message);

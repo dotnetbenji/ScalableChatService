@@ -4,13 +4,13 @@ using StackExchange.Redis;
 
 namespace AuthenticationService;
 
-internal sealed record SessionToken(string Token);
-internal interface ISessionValidator
+public sealed record SessionToken(string Token);
+public interface ISessionValidator
 {
     Task<int?> Validate(SessionToken token);
 }
 
-internal sealed class DBSessionValidator(SqlConnection _db) : ISessionValidator
+public sealed class DBSessionValidator(SqlConnection _db) : ISessionValidator
 {
     public async Task<int?> Validate(SessionToken token)
     {
@@ -31,7 +31,7 @@ internal sealed class DBSessionValidator(SqlConnection _db) : ISessionValidator
     }
 }
 
-internal sealed class RedisSessionValidator(IConnectionMultiplexer redis) : ISessionValidator
+public sealed class RedisSessionValidator(IConnectionMultiplexer redis) : ISessionValidator
 {
     public async Task<int?> Validate(SessionToken token)
     {
@@ -55,4 +55,4 @@ internal sealed class RedisSessionValidator(IConnectionMultiplexer redis) : ISes
     }
 }
 
-internal sealed record Session(int UserId, DateTime ExpiresAt);
+public sealed record Session(int UserId, DateTime ExpiresAt);

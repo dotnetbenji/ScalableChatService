@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1BEDCD03-F863-5BF8-7F0C-CBE5284A596D}|AuthenticationService\\AuthenticationService.csproj|c:\\dotnetbenji\\scalablechatservice\\chatservice\\authenticationservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BEDCD03-F863-5BF8-7F0C-CBE5284A596D}|AuthenticationService\\AuthenticationService.csproj|solutionrelative:authenticationservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BEDCD03-F863-5BF8-7F0C-CBE5284A596D}|AuthenticationService\\AuthenticationService.csproj|c:\\dotnetbenji\\scalablechatservice\\chatservice\\authenticationservice\\sessionvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BEDCD03-F863-5BF8-7F0C-CBE5284A596D}|AuthenticationService\\AuthenticationService.csproj|solutionrelative:authenticationservice\\sessionvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BEDCD03-F863-5BF8-7F0C-CBE5284A596D}|AuthenticationService\\AuthenticationService.csproj|c:\\dotnetbenji\\scalablechatservice\\chatservice\\authenticationservice\\data\\implementations\\newsessiontoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BEDCD03-F863-5BF8-7F0C-CBE5284A596D}|AuthenticationService\\AuthenticationService.csproj|solutionrelative:authenticationservice\\data\\implementations\\newsessiontoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BEDCD03-F863-5BF8-7F0C-CBE5284A596D}|AuthenticationService\\AuthenticationService.csproj|c:\\dotnetbenji\\scalablechatservice\\chatservice\\authenticationservice\\data\\interfaces\\inewsaltprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BEDCD03-F863-5BF8-7F0C-CBE5284A596D}|AuthenticationService\\AuthenticationService.csproj|solutionrelative:authenticationservice\\data\\interfaces\\inewsaltprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BEDCD03-F863-5BF8-7F0C-CBE5284A596D}|AuthenticationService\\AuthenticationService.csproj|c:\\dotnetbenji\\scalablechatservice\\chatservice\\authenticationservice\\data\\interfaces\\inewsessiontokenprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BEDCD03-F863-5BF8-7F0C-CBE5284A596D}|AuthenticationService\\AuthenticationService.csproj|solutionrelative:authenticationservice\\data\\interfaces\\inewsessiontokenprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BEDCD03-F863-5BF8-7F0C-CBE5284A596D}|AuthenticationService\\AuthenticationService.csproj|c:\\dotnetbenji\\scalablechatservice\\chatservice\\authenticationservice\\data\\implementations\\newsaltprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BEDCD03-F863-5BF8-7F0C-CBE5284A596D}|AuthenticationService\\AuthenticationService.csproj|solutionrelative:authenticationservice\\data\\implementations\\newsaltprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AC1CD003-DC72-C90D-BDA0-207A89E186BC}|ChatService\\ChatService.csproj|c:\\dotnetbenji\\scalablechatservice\\chatservice\\chatservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC1CD003-DC72-C90D-BDA0-207A89E186BC}|ChatService\\ChatService.csproj|solutionrelative:chatservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -22,11 +46,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 206,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "SessionValidator.cs",
+              "DocumentMoniker": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\AuthenticationService\\SessionValidator.cs",
+              "RelativeDocumentMoniker": "AuthenticationService\\SessionValidator.cs",
+              "ToolTip": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\AuthenticationService\\SessionValidator.cs",
+              "RelativeToolTip": "AuthenticationService\\SessionValidator.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAcwDgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T10:42:26.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\AuthenticationService\\Program.cs",
+              "RelativeDocumentMoniker": "AuthenticationService\\Program.cs",
+              "ToolTip": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\AuthenticationService\\Program.cs",
+              "RelativeToolTip": "AuthenticationService\\Program.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAAAGsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T10:42:26.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "INewSaltProvider.cs",
+              "DocumentMoniker": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\AuthenticationService\\Data\\Interfaces\\INewSaltProvider.cs",
+              "RelativeDocumentMoniker": "AuthenticationService\\Data\\Interfaces\\INewSaltProvider.cs",
+              "ToolTip": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\AuthenticationService\\Data\\Interfaces\\INewSaltProvider.cs",
+              "RelativeToolTip": "AuthenticationService\\Data\\Interfaces\\INewSaltProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T10:42:22.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "INewSessionTokenProvider.cs",
+              "DocumentMoniker": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\AuthenticationService\\Data\\Interfaces\\INewSessionTokenProvider.cs",
+              "RelativeDocumentMoniker": "AuthenticationService\\Data\\Interfaces\\INewSessionTokenProvider.cs",
+              "ToolTip": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\AuthenticationService\\Data\\Interfaces\\INewSessionTokenProvider.cs",
+              "RelativeToolTip": "AuthenticationService\\Data\\Interfaces\\INewSessionTokenProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T10:42:21.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NewSessionToken.cs",
+              "DocumentMoniker": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\AuthenticationService\\Data\\Implementations\\NewSessionToken.cs",
+              "RelativeDocumentMoniker": "AuthenticationService\\Data\\Implementations\\NewSessionToken.cs",
+              "ToolTip": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\AuthenticationService\\Data\\Implementations\\NewSessionToken.cs",
+              "RelativeToolTip": "AuthenticationService\\Data\\Implementations\\NewSessionToken.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T10:42:20.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NewSaltProvider.cs",
+              "DocumentMoniker": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\AuthenticationService\\Data\\Implementations\\NewSaltProvider.cs",
+              "RelativeDocumentMoniker": "AuthenticationService\\Data\\Implementations\\NewSaltProvider.cs",
+              "ToolTip": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\AuthenticationService\\Data\\Implementations\\NewSaltProvider.cs",
+              "RelativeToolTip": "AuthenticationService\\Data\\Implementations\\NewSaltProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T10:42:19.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\ChatService\\appsettings.json",
               "RelativeDocumentMoniker": "ChatService\\appsettings.json",
@@ -38,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "MessageDistributionService.cs",
               "DocumentMoniker": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\ChatService\\MessageDistributionService.cs",
               "RelativeDocumentMoniker": "ChatService\\MessageDistributionService.cs",
@@ -50,13 +152,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\ChatService\\Program.cs",
               "RelativeDocumentMoniker": "ChatService\\Program.cs",
               "ToolTip": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\ChatService\\Program.cs",
               "RelativeToolTip": "ChatService\\Program.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-08T21:57:46.769Z",
               "EditorCaption": ""
