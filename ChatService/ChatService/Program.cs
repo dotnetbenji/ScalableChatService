@@ -4,6 +4,16 @@ using StackExchange.Redis;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy.AllowAnyOrigin()    // allow all origins
+              .AllowAnyMethod()    // allow GET, POST, PUT, DELETE, etc.
+              .AllowAnyHeader();   // allow all headers
+    });
+});
+
 builder.Services.AddOpenApi();
 
 builder.Services.AddSingleton<IConnectionMultiplexer>(sp =>
@@ -22,6 +32,8 @@ builder.Services.AddTransient<ISessionValidator, RedisSessionValidator>();
 builder.Services.AddHostedService<RedisSubscriberService>();
 
 var app = builder.Build();
+
+app.UseCors("AllowAll");
 
 if (app.Environment.IsDevelopment())
 {
