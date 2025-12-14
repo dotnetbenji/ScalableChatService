@@ -1,0 +1,8 @@
+.chat-container {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom right, #2e1065, #4f46e5); /* Dark purple to blue */
+}

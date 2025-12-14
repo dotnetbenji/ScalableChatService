@@ -91,3 +91,14 @@
 .form-input:focus {
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
 }
+
+.login-error {
+    margin-top: 0.75rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background-color: rgba(255, 0, 0, 0.3);
+    color: #511111;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    font-weight: 600;
+}
