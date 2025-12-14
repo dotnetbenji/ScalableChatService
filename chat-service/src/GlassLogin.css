@@ -1,0 +1,93 @@
+.login-container {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom right, #2e1065, #4f46e5); /* Dark purple to blue */
+}
+
+.login-card {
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+.login-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.login-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.login-form label {
+    display: block;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0.25rem;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    border: none;
+    outline: none;
+    margin-top: 0.25rem;
+}
+
+.login-form input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.login-form input:focus {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+}
+
+.login-form button {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.5rem 0;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #1f2937;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.form-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  border: none;
+  outline: none;
+  margin-top: 0.25rem;
+}
+
+.form-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form-input:focus {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+}
