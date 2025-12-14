@@ -8,7 +8,9 @@ function App() {
 
   return (
     <>
-      {isLoggedIn ? <Chat /> : <GlassLogin onLoginSuccess={() => setIsLoggedIn(true)} />}
+      {isLoggedIn 
+      ? <Chat onLoginRequiredAccepted={() => setIsLoggedIn(false)} /> 
+      : <GlassLogin onLoginSuccess={() => setIsLoggedIn(true)} />}
     </>
   );
 }
