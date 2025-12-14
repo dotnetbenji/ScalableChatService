@@ -51,10 +51,17 @@ app.MapGet("/sse", async (IMessageDistributuionService messageDistributionServic
 
     var success = messageDistributionService.Subscribe(messageChannel);
 
-    await foreach (var msg in messageChannel.ReadAllMessages(ctx.RequestAborted))
+    try
     {
-        await ctx.Response.WriteAsync($"data: {msg}\n\n", ctx.RequestAborted);
-        await ctx.Response.Body.FlushAsync(ctx.RequestAborted);
+        await foreach (var msg in messageChannel.ReadAllMessages(ctx.RequestAborted))
+        {
+            await ctx.Response.WriteAsync($"data: {msg}\n\n", ctx.RequestAborted);
+            await ctx.Response.Body.FlushAsync(ctx.RequestAborted);
+        }
+    }
+    catch
+    {
+        // Ignored
     }
 });
 
