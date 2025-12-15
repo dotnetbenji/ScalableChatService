@@ -72,14 +72,18 @@ export default function Chat({ onLoginRequiredAccepted }: ChatProps) {
     return (
         <div className="chat-container">
             <div className="chat-inner-container">
-                <div className="messages">
-                    {messages.map((msg, idx) => (
-                        <div key={idx} className="chat-message">{msg}</div>
-                    ))}
+                <div className="message-blocks">
+                    <div className="message-block">
+                        {messages.map((msg, idx) => (
+                            <div key={idx} className="chat-message">{msg}</div>
+                        ))}
+                    </div>
+                    <div className="message-block">
+                        <img src={"https://terraria.wiki.gg/images/NewPromoLogo.png?f3ca3f"} alt="" />
+                    </div>
                 </div>
                 {loginRequired && (
                     <GlassCard>
-                        <h2>Login</h2>
                         <MiniGlassLogin 
                             onLoginSuccess={() => setLoginRequired(false)}
                             onLoginFailure={() => {}} />
