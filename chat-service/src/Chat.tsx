@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import './Chat.css';
-import GlassLogin from './GlassLogin';
+import GlassCard from "./GlassCard/GlassCard";
+import MiniGlassLogin from "./GlassCard/Login/MiniGlassLogin";
 
 interface ChatProps {
     onLoginRequiredAccepted: () => void;
@@ -61,11 +62,6 @@ export default function Chat({ onLoginRequiredAccepted }: ChatProps) {
         }
     };
 
-    const handleLoginRequired = () => {
-        onLoginRequiredAccepted();
-        console.log('Login handler called');
-    };
-
     const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
         if (e.key === 'Enter') {
             e.preventDefault();
@@ -82,15 +78,12 @@ export default function Chat({ onLoginRequiredAccepted }: ChatProps) {
                     ))}
                 </div>
                 {loginRequired && (
-                    <div className="login-required">
-                        <div className="login-required-text">Login required</div>
-                        <button
-                            className="login-required-button"
-                            onClick={handleLoginRequired}
-                        >
-                            Login
-                        </button>
-                    </div>
+                    <GlassCard>
+                        <h2>Login</h2>
+                        <MiniGlassLogin 
+                            onLoginSuccess={() => setLoginRequired(false)}
+                            onLoginFailure={() => {}} />
+                    </GlassCard>
                 )}
                 <div className="chat-input-container">
                     <input

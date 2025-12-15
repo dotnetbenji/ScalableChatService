@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AC1CD003-DC72-C90D-BDA0-207A89E186BC}|ChatService\\ChatService.csproj|c:\\dotnetbenji\\scalablechatservice\\chatservice\\chatservice\\chatservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{AC1CD003-DC72-C90D-BDA0-207A89E186BC}|ChatService\\ChatService.csproj|solutionrelative:chatservice\\chatservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AC1CD003-DC72-C90D-BDA0-207A89E186BC}|ChatService\\ChatService.csproj|c:\\dotnetbenji\\scalablechatservice\\chatservice\\chatservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC1CD003-DC72-C90D-BDA0-207A89E186BC}|ChatService\\ChatService.csproj|solutionrelative:chatservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC1CD003-DC72-C90D-BDA0-207A89E186BC}|ChatService\\ChatService.csproj|c:\\dotnetbenji\\scalablechatservice\\chatservice\\chatservice\\chatservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{AC1CD003-DC72-C90D-BDA0-207A89E186BC}|ChatService\\ChatService.csproj|solutionrelative:chatservice\\chatservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1BEDCD03-F863-5BF8-7F0C-CBE5284A596D}|AuthenticationService\\AuthenticationService.csproj|c:\\dotnetbenji\\scalablechatservice\\chatservice\\authenticationservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -74,7 +74,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 206,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Document",
@@ -104,13 +104,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ChatService.csproj",
               "DocumentMoniker": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\ChatService\\ChatService.csproj",
               "RelativeDocumentMoniker": "ChatService\\ChatService.csproj",
               "ToolTip": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\ChatService\\ChatService.csproj",
               "RelativeToolTip": "ChatService\\ChatService.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-12-13T11:20:16.651Z",
               "EditorCaption": ""
@@ -263,13 +263,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\ChatService\\Program.cs",
               "RelativeDocumentMoniker": "ChatService\\Program.cs",
               "ToolTip": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\ChatService\\Program.cs",
               "RelativeToolTip": "ChatService\\Program.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACMAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAArwDsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-08T21:57:46.769Z",
               "EditorCaption": ""

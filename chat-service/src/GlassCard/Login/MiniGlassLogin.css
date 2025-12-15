@@ -1,0 +1,50 @@
+.mini-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 240px;
+}
+
+.mini-login-title {
+    margin: 0 0 4px;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.mini-login input {
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+}
+
+.mini-login input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.mini-login button {
+    margin-top: 4px;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+
+    background: rgba(255, 255, 255, 0.25);
+    color: #fff;
+    font-weight: 500;
+}
+
+.mini-login button:disabled {
+    opacity: 0.6;
+    cursor: default;
+}
+
+.mini-login-error {
+    font-size: 0.75rem;
+    text-align: center;
+    color: #ffb4b4;
+}
