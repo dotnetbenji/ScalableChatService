@@ -1,6 +1,7 @@
 using AuthenticationService.Sessions.Validators;
 using ChatService;
 using StackExchange.Redis;
+using System.Text.Json;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -77,7 +78,8 @@ app.MapPost("/send", async (HttpContext ctx, SendMessageRequest messageRequest, 
 
     var pubsub = connectionMultiplexer.GetSubscriber();
 
-    _ = pubsub.PublishAsync(RedisSubscriberService.Channel, $"{user.Username}: {messageRequest.Message}", CommandFlags.FireAndForget);
+    Message message = new(user.Username, messageRequest.Message);
+    _ = pubsub.PublishAsync(RedisSubscriberService.Channel, JsonSerializer.Serialize(message), CommandFlags.FireAndForget);
 
     return Results.Ok();
 });
@@ -105,3 +107,4 @@ static string? GetSessionTokenFromRequest(HttpContext ctx)
 }
 
 internal sealed record SendMessageRequest(string Message);
+internal sealed record Message(string Username, string Content);
