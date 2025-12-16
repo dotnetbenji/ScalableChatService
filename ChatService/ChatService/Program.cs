@@ -47,8 +47,8 @@ app.MapGet("/sse", async (IMessageDistributuionService messageDistributionServic
 {
     ctx.Response.Headers.Append("Content-Type", "text/event-stream");
 
-    await ctx.Response.WriteAsync($"data: Welcome\n\n", ctx.RequestAborted);
-    await ctx.Response.Body.FlushAsync(ctx.RequestAborted);
+    //await ctx.Response.WriteAsync($"data: Welcome\n\n", ctx.RequestAborted);
+    //await ctx.Response.Body.FlushAsync(ctx.RequestAborted);
 
     var success = messageDistributionService.Subscribe(messageChannel);
 

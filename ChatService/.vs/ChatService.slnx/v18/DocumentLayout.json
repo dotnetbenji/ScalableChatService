@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{AC1CD003-DC72-C90D-BDA0-207A89E186BC}|ChatService\\ChatService.csproj|solutionrelative:chatservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{1BEDCD03-F863-5BF8-7F0C-CBE5284A596D}|AuthenticationService\\AuthenticationService.csproj|c:\\dotnetbenji\\scalablechatservice\\chatservice\\authenticationservice\\sessions\\validators\\redissessionvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BEDCD03-F863-5BF8-7F0C-CBE5284A596D}|AuthenticationService\\AuthenticationService.csproj|solutionrelative:authenticationservice\\sessions\\validators\\redissessionvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BEDCD03-F863-5BF8-7F0C-CBE5284A596D}|AuthenticationService\\AuthenticationService.csproj|c:\\dotnetbenji\\scalablechatservice\\chatservice\\authenticationservice\\sessions\\resolvers\\redissessionresolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BEDCD03-F863-5BF8-7F0C-CBE5284A596D}|AuthenticationService\\AuthenticationService.csproj|solutionrelative:authenticationservice\\sessions\\resolvers\\redissessionresolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AC1CD003-DC72-C90D-BDA0-207A89E186BC}|ChatService\\ChatService.csproj|c:\\dotnetbenji\\scalablechatservice\\chatservice\\chatservice\\chatservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{AC1CD003-DC72-C90D-BDA0-207A89E186BC}|ChatService\\ChatService.csproj|solutionrelative:chatservice\\chatservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
@@ -74,11 +82,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 206,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 17,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
+              "Title": "RedisSessionResolver.cs",
+              "DocumentMoniker": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\AuthenticationService\\Sessions\\Resolvers\\RedisSessionResolver.cs",
+              "RelativeDocumentMoniker": "AuthenticationService\\Sessions\\Resolvers\\RedisSessionResolver.cs",
+              "ToolTip": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\AuthenticationService\\Sessions\\Resolvers\\RedisSessionResolver.cs",
+              "RelativeToolTip": "AuthenticationService\\Sessions\\Resolvers\\RedisSessionResolver.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T18:48:13.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RedisSessionValidator.cs",
+              "DocumentMoniker": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\AuthenticationService\\Sessions\\Validators\\RedisSessionValidator.cs",
+              "RelativeDocumentMoniker": "AuthenticationService\\Sessions\\Validators\\RedisSessionValidator.cs",
+              "ToolTip": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\AuthenticationService\\Sessions\\Validators\\RedisSessionValidator.cs",
+              "RelativeToolTip": "AuthenticationService\\Sessions\\Validators\\RedisSessionValidator.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T18:47:55.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\AuthenticationService\\appsettings.Development.json",
               "RelativeDocumentMoniker": "AuthenticationService\\appsettings.Development.json",
@@ -90,7 +124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\AuthenticationService\\appsettings.json",
               "RelativeDocumentMoniker": "AuthenticationService\\appsettings.json",
@@ -102,7 +136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ChatService.csproj",
               "DocumentMoniker": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\ChatService\\ChatService.csproj",
               "RelativeDocumentMoniker": "ChatService\\ChatService.csproj",
@@ -114,7 +148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "DBSessionValidator.cs",
               "DocumentMoniker": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\AuthenticationService\\AuthenticationService\\Sessions\\Validators\\DBSessionValidator.cs",
               "RelativeDocumentMoniker": "AuthenticationService\\AuthenticationService\\Sessions\\Validators\\DBSessionValidator.cs",
@@ -126,7 +160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "RedisSessionValidator.cs",
               "DocumentMoniker": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\AuthenticationService\\AuthenticationService\\Sessions\\Validators\\RedisSessionValidator.cs",
               "RelativeDocumentMoniker": "AuthenticationService\\AuthenticationService\\Sessions\\Validators\\RedisSessionValidator.cs",
@@ -138,7 +172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "ISessionValidator.cs",
               "DocumentMoniker": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\AuthenticationService\\AuthenticationService\\Sessions\\Validators\\ISessionValidator.cs",
               "RelativeDocumentMoniker": "AuthenticationService\\AuthenticationService\\Sessions\\Validators\\ISessionValidator.cs",
@@ -150,7 +184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\AuthenticationService\\AuthenticationService\\Program.cs",
               "RelativeDocumentMoniker": "AuthenticationService\\AuthenticationService\\Program.cs",
@@ -162,7 +196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "RedisSubscriberService.cs",
               "DocumentMoniker": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\ChatService\\RedisSubscriberService.cs",
               "RelativeDocumentMoniker": "ChatService\\RedisSubscriberService.cs",
@@ -174,7 +208,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\AuthenticationService\\Program.cs",
               "RelativeDocumentMoniker": "AuthenticationService\\Program.cs",
@@ -186,7 +220,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "INewSaltProvider.cs",
               "DocumentMoniker": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\AuthenticationService\\Data\\Interfaces\\INewSaltProvider.cs",
               "RelativeDocumentMoniker": "AuthenticationService\\Data\\Interfaces\\INewSaltProvider.cs",
@@ -198,7 +232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "INewSessionTokenProvider.cs",
               "DocumentMoniker": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\AuthenticationService\\Data\\Interfaces\\INewSessionTokenProvider.cs",
               "RelativeDocumentMoniker": "AuthenticationService\\Data\\Interfaces\\INewSessionTokenProvider.cs",
@@ -210,7 +244,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "NewSessionToken.cs",
               "DocumentMoniker": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\AuthenticationService\\Data\\Implementations\\NewSessionToken.cs",
               "RelativeDocumentMoniker": "AuthenticationService\\Data\\Implementations\\NewSessionToken.cs",
@@ -222,7 +256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "NewSaltProvider.cs",
               "DocumentMoniker": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\AuthenticationService\\Data\\Implementations\\NewSaltProvider.cs",
               "RelativeDocumentMoniker": "AuthenticationService\\Data\\Implementations\\NewSaltProvider.cs",
@@ -234,7 +268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\ChatService\\appsettings.json",
               "RelativeDocumentMoniker": "ChatService\\appsettings.json",
@@ -246,7 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "MessageDistributionService.cs",
               "DocumentMoniker": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\ChatService\\MessageDistributionService.cs",
               "RelativeDocumentMoniker": "ChatService\\MessageDistributionService.cs",
@@ -264,7 +298,7 @@
               "RelativeDocumentMoniker": "ChatService\\Program.cs",
               "ToolTip": "C:\\dotnetbenji\\ScalableChatService\\ChatService\\ChatService\\Program.cs",
               "RelativeToolTip": "ChatService\\Program.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAArwCgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAAAFUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-08T21:57:46.769Z",
               "EditorCaption": ""

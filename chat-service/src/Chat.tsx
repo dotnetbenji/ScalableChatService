@@ -16,7 +16,17 @@ export default function Chat({ onLoginRequiredAccepted }: ChatProps) {
         const eventSource = new EventSource('http://localhost:5001/sse');
 
         eventSource.onmessage = (event) => {
-            setMessages(prev => [...prev, event.data]);
+            console.log(event);
+            console.log(event.data);
+            const data = JSON.parse(event.data) as {
+                Username: string;
+                Content: string;
+            };
+
+            setMessages(prev => [
+                ...prev,
+                `${data.Username}: ${data.Content}`
+            ]);
         };
 
         eventSource.onerror = (err) => {
@@ -84,9 +94,9 @@ export default function Chat({ onLoginRequiredAccepted }: ChatProps) {
                 </div>
                 {loginRequired && (
                     <GlassCard>
-                        <MiniGlassLogin 
+                        <MiniGlassLogin
                             onLoginSuccess={() => setLoginRequired(false)}
-                            onLoginFailure={() => {}} />
+                            onLoginFailure={() => { }} />
                     </GlassCard>
                 )}
                 <div className="chat-input-container">
